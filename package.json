@@ -1,0 +1,16 @@
+{
+  "name": "clockwork-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.1.4",
+    "gamedig": "^0.2.25",
+    "express": "^4.14.0"
+  },
+  "scripts": {
+    "start": "node src/app.js"
+  }
+}
