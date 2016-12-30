@@ -1,24 +1,18 @@
 var config = {};
+var server = require('./config/server.json');
 
 // API Settings
 config.api = {};
 config.api.port = 3000;
 
+config.cron = {};
+config.cron.enabled = true;
+
+config.log = {};
+config.log.path = './log';
+
 // Server Settings
-config.server = {
-    "teamspeak3": {
-        "port": 7777,
-        "host": "das-uhrwerk.de"
-    },
-    "starbound": {
-        "port": 21025,
-        "host": "das-uhrwerk.de"
-    },
-    "arkse": {
-        "port": 8888,
-        "host": "das-uhrwerk.de"
-    }
-};
+config.server = server;
 
 // export
 module.exports = config;
