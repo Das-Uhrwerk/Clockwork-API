@@ -1,3 +1,5 @@
+"use strict";
+
 var config = {};
 var server = require('./config/server.json');
 
