@@ -1,7 +1,7 @@
 "use strict";
 
 var config = {};
-var server = require('./config/server.json');
+var serverStorage = app_require('config/server.json');
 
 // API Settings
 config.api = {};
@@ -14,7 +14,7 @@ config.log = {};
 config.log.path = './log';
 
 // Server Settings
-config.server = server;
+config.server = serverStorage;
 
 // export
 module.exports = config;

@@ -1,10 +1,15 @@
 "use strict";
 
 const server = require('express').Router();
-const all = require('./all');
-const single = require('./single');
+const config = app_require('config');
+const all = app_require('routes/server/all');
+const single = app_require('routes/server/single');
 
-server.get('/', all);
+server.get('/', function(req, res) {
+    res.status(200).json(config.server);
+});
+
+server.get('/all', all);
 server.get('/:serverName', single);
 
 module.exports = server;

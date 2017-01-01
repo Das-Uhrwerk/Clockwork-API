@@ -1,8 +1,8 @@
 "use strict";
 
-const data = require('../../config/server.json');
-const query = require('../../query');
+const data = app_require('config/server.json');
+const query = app_require('query');
 
 module.exports = (req, res) => {
-  query.checkServer(req, res);
+    query.checkServer(req, res);
 };

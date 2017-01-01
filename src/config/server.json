@@ -1,5 +1,5 @@
 {
-    "teamspeak": {
+    "teamspeak3": {
         "port": 7777,
         "host": "das-uhrwerk.de"
     },
