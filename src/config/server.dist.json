@@ -6,9 +6,5 @@
     "starbound": {
         "port": 21025,
         "host": "das-uhrwerk.de"
-    },
-    "arkse": {
-        "port": 8888,
-        "host": "das-uhrwerk.de"
     }
 }
