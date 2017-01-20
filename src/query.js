@@ -7,9 +7,13 @@ const config = app_require('config');
 module.exports = {
     checkServer: function(req, res, serverName) {
         if (serverName) {
-            this.getServer(serverName)(function(data, state) {
-                res.status(200).json(state);
-            });
+            if(config.server[serverName]){
+              this.getServer(serverName)(function(data, state) {
+                  res.status(200).json(state);
+              });
+            } else {
+              res.status(404).json({message:"Not found!"});
+            }
         } else {
             async.parallel(
                 this.bundleServers(),

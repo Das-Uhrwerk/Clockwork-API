@@ -18,6 +18,12 @@ const config = app_require('config');
 const app = express();
 
 app.use('/', routes);
+
+app.get('*', function(req, res){
+  res.status(404).json({message:"Not found!"});
+});
+
+
 app.listen(config.api.port, function() {
     // reserve this place for logging, and CLI output.
 });
