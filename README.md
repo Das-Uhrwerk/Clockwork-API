@@ -1,6 +1,8 @@
 # Clockwork-API
 📶 Serverstatus | Administration API
 
+[![CircleCI](https://circleci.com/gh/Das-Uhrwerk/Clockwork-API.svg?style=shield)]()
+
 ### Install
 ```bash
 # Build
